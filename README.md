@@ -48,13 +48,13 @@ sudo dnf install @buildsys-build cmake qt5-qtdeclarative-devel ibus-devel
 ```
 On a Arch Linux / Arch Based system you can easily install them like this
 ```
-sudo pacman -Sy base-devel cmake qt5-base qtdeclarative libibus
+sudo pacman -Sy base-devel cmake qt5-base qtdeclarative libibus ibus
 ```
 
 After you have installed required libraries and binaries. Clone this repository and change the directory to the cloned folder and issue the commands:
 ```
 mkdir build && cd build
-cmake .. -DCMAKE_INSTALL_PREFIX='/usr'
+cmake -DCMAKE_INSTALL_PREFIX='/usr'
 make
 sudo make install
 ```
